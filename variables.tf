@@ -21,3 +21,14 @@ variable "project" {
   type        = string
   default     = "terraform-azure-lab"
 }
+
+variable "storage_account_name" {
+  description = "Name of the Azure Storage Account"
+  type        = string
+}
+
+variable "storage_containers" {
+  description = "Blob container to create in the storage account"
+  type        = set(string)
+  default     = ["bronze", "silver", "gold"]
+}
