@@ -1,0 +1,4 @@
+resource_group_name = "rg-terraform-lab"
+location             = "Brazil South"
+environment          = "dev"
+project              = "terraform-azure-lab"
